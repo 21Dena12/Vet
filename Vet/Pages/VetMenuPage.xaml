@@ -1,0 +1,20 @@
+﻿<Page x:Class="Vet.Pages.VetMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Vet.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VetMenuPage">
+
+    <Grid Background="LightGray">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <TextBlock Text="Меню ветеринара" FontSize="24" FontWeight="Bold" Margin="0,0,0,20" Width="222"/>
+            <Button Content="Управление заявками" Width="200" Margin="10" Click="ManageAppointmentsButton_Click"/>
+            <Button Content="Управление лекарствами" Width="200" Height="40" Margin="10" Click="ManageMedicationsButton_Click"/>
+            <Button Content="Управление процедурами" Width="200" Height="40" Margin="10" Click="ManageProceduresButton_Click"/>
+            <Button Content="Выход" Width="200" Margin="10" Click="LogoutButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

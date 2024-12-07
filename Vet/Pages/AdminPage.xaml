@@ -1,0 +1,32 @@
+﻿<Page x:Class="Vet.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Vet.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AdminPage">
+
+    <Grid Background="LightGray">
+        <DockPanel>
+            <!-- Верхнее меню -->
+            <Menu DockPanel.Dock="Top" Background="DarkBlue" Foreground="White">
+                <MenuItem Header="Отчеты" Click="ReportsMenu_Click"/>
+                <MenuItem Header="Работники" Click="ManageWorkersMenu_Click"/>
+                <MenuItem Header="Записи клиентов" Click="ViewAppointmentsMenu_Click"/>
+            </Menu>
+
+            <!-- Центральная область -->
+            <Grid>
+                <TextBlock Text="Добро пожаловать в панель администратора" FontSize="20" FontWeight="Bold" 
+                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+
+            <!-- Нижняя панель -->
+            <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+                <Button Content="Выйти" Width="100" Height="30" Background="DarkRed" Foreground="White" Click="LogoutButton_Click"/>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Page>

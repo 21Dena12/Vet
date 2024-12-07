@@ -1,0 +1,21 @@
+﻿<Page x:Class="Vet.Pages.ClientMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Vet.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ClientMenuPage">
+
+    <Grid Background="LightGray">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="600">
+            <TextBlock Text="Меню клиента" FontSize="24" FontWeight="Bold" Margin="0,0,0,30" TextAlignment="Center"/>
+            <Button Content="Управление животными" Width="200" Margin="0,10" Click="ManageAnimalsButton_Click"/>
+            <Button Content="Профиль" Width="200" Margin="0,10" Click="ProfileButton_Click"/>
+            <Button Content="Создать запись" Width="200" Margin="0,10" Click="CreateAppointmentButton_Click"/>
+            <Button Content="Просмотр записей" Width="200" Margin="0,10" Click="ViewAppointmentsButton_Click"/>
+            <Button Content="Назад" Width="100" Margin="0,20,0,0" Click="BackButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
